@@ -1,0 +1,57 @@
+<div class="container min-vh-100" style="padding-top: 10%">
+  <div class="title">
+    <h1>Result</h1>
+  </div>
+  <div class="Fundus Analysis Result">
+    <div class="min-vh-80 row" style="padding-top: 5%">
+      <div class="result-box">
+        <h4>Right Eye</h4>
+        <div>
+          <a href="{{ rtAnnotate }}" target="_blank">
+            <img src="{{ rtAnnotate }}" width="512px" height="512px" />
+          </a>
+        </div>
+      </div>
+      <div class="result-box">
+        <h4>Left Eye</h4>
+        <div>
+          <a href="{{ ltAnnotate }}" target="_blank">
+            <img src="{{ ltAnnotate }}" width="512px" height="512px" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h2>Diagnosis Inference</h2>
+      <h4>Right Eye: {{ rtDiagnosisText }}</h4>
+      <h4>Left Eye: {{ ltDiagnosisText }}</h4>
+    </div>
+  </div>
+  <div class="next-patient-btn">
+    <button 
+    type="button" 
+    class="btn btn-primary"
+    (click)="nextPatient()">Next Patient</button>
+  </div>
+  <p></p>
+  <div class="row">
+    <div class="col-6 print-btn">
+      <button
+        type="button"
+        class="btn btn-success"
+        (click)="window.print()"
+      >
+        Print to PDF
+      </button>
+    </div>
+    <div class="col-6 json-btn">
+      <button
+        type="button"
+        class="btn btn-warning"
+        (click)="dynamicDownloadJson()"
+      >
+        Save as JSON
+      </button>
+    </div>
+  </div>
+</div>

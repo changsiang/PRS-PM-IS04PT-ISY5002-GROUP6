@@ -1,0 +1,61 @@
+<div class="container">
+  <div class="min-vh-100 row align-items-center">
+    <div class="col-6">
+      <img [src]="imageSrc" style="object-fit: contain; max-width: '100%'" />
+    </div>
+    <div class="col-6">
+      <div class="row border p-3 pt-5 d-flex justify-content-center" [formGroup]="loginForm">
+        <label class="lbl-title">Please enter your credential</label>
+        <div class="row mt-3">
+          <label class="col-2 col-form-label lbl-body">Username:</label>
+          <div class="col-10">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Please enter your username"
+              formControlName="username"
+            />
+            <label class="error" *ngIf="loginError == true"
+              >Please enter a valid username</label
+            >
+          </div>
+        </div>
+        <div class="row mt-3">
+          <label class="col-2 col-form-label lbl-body">Password:</label>
+          <div class="col-10">
+            <input
+              type="password"
+              class="form-control"
+              placeholder="Please enter your password"
+              formControlName="password"
+            />
+            <label class="error" *ngIf="loginError == true"
+              >Please enter a valid password</label
+            >
+          </div>
+        </div>
+        <div class="row mt-3">
+          <button
+            type="button"
+            class="btn btn-login"
+            (click)="onClickLoginBtn()"
+          >
+            Log In
+          </button>
+        </div>
+        <div class="row" style="padding-top: 5%">
+          <div class="col-6">
+            <a style="font-size: small;">Powered by National University of Singapore</a>
+          </div>
+          <div class="col-6">
+            <img
+              [src]="issLogo"
+              style="object-fit: contain; max-width: '100%'"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <a routerLink="/patient-profile">go to patientprofile</a> -->

@@ -1,0 +1,52 @@
+<div class="container min-vh-100" style="padding-top: 10%">
+  <div class="title">
+    <h1>Please upload the patient's fundus photo for analysis</h1>
+  </div>
+  <div class="min-vh-80 row" style="padding-top: 5%">
+    <div class="dropzone" appRightDnd>
+      <input
+        type="file"
+        #fileDropRef
+        id="rtfileDropRef"
+        class="file-upload"
+        data-height="500"
+        (change)="rtOnChange($event)"
+        (drop)="rtOnChange($event)"
+      />
+      <div *ngIf="rtPreviewImage === ''">
+        <h4>Upload</h4>
+        <h3>RIGHT</h3>
+        <h4>fundus image</h4>
+      </div>
+      <div *ngIf="rtPreviewImage !== ''" style="padding-bottom: 5px">
+        <img src="{{ rtPreviewImage }}" width="128px" height="128px" />
+      </div>
+      <label for="rtfileDropRef">Browse for file</label>
+    </div>
+    <div class="dropzone" appLeftDnd>
+      <input
+        type="file"
+        #fileDropRef
+        id="ltfileDropRef"
+        class="file-upload"
+        data-height="500"
+        (change)="ltOnChange($event)"
+        (drop)="ltOnChange($event)"
+      />
+      <div *ngIf="ltPreviewImage === ''">
+        <h4>Upload</h4>
+        <h3>LEFT</h3>
+        <h4>fundus image</h4>
+      </div>
+      <div *ngIf="ltPreviewImage !== ''" style="padding-bottom: 5px">
+        <img src="{{ ltPreviewImage }}" width="128px" height="128px" />
+      </div>
+      <label for="ltfileDropRef">Browse for file</label>
+    </div>
+  </div>
+  <div class="min-vh-20" style="padding-top: 5%">
+    <div [ngClass]="rtPreviewImage === '' || ltPreviewImage === '' || analysing === true ? 'analysis-disabled' : 'analysis-default'" (click)="analysis()">
+      <label><p>{{ analysing ? "Analysing..." : "Proceed to analysis"}}</p></label>
+    </div>
+  </div>
+</div>

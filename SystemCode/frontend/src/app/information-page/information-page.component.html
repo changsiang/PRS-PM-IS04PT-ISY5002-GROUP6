@@ -1,0 +1,38 @@
+<div class="container min-vh-100" style="padding-top: 10%">
+  <div class="title">
+    <h1>Medical Disclaimer</h1>
+  </div>
+  <div class="body">
+    <p>
+      This AI-powered Eye diagnosis system was developed by a team from NUS-ISS.
+      The AI is trained on the Rotterdam Ophthalmic Data Repository-
+      Longitudinal diabetic retinopathy screening fundus photos with clinical
+      features labelled by Dr Kelvin Li, an Associate Consultant from the
+      Department of Ophthalmology, Tan Tock Seng Hospital.
+    </p>
+    <p>
+      This version of the system is currently capable of identifying features
+      from diabetic retinopathy, age-related macular degeneration, epiretinal
+      membrane and choroidal nevus. For more information, suggestions or
+      feedback, please contact
+      <a href="mailto:kelvin_li@ttsh.com.sg">kelvin_li@ttsh.com.sg</a>
+    </p>
+  </div>
+  <p></p>
+  <div class="user-input">
+    <div class="form-check">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        value=""
+        id="flexCheckDefault"
+        [checked]="isChecked"
+        (change)="checkCheckBoxvalue($event)"
+        />
+      <label class="form-check-label" for="flexCheckDefault">
+        <h3>I understood</h3>
+      </label>
+    </div>
+    <button type="button" [ngClass]="isChecked ? 'btn btn-primary' : 'btn btn-secondary'" (click)="proceed($event)">Proceed</button>
+  </div>
+</div>

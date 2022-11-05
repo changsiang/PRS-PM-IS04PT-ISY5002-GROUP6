@@ -1,0 +1,93 @@
+<div class="d-flex flex-row p-3 min-vh-100">
+  <div
+    class="d-flex flex-column flex-shrink-0 sidebar"
+    style="width: 280px"
+    *ngIf="this.currentRoute != '/'"
+  >
+    <button (click)="this.navigateToLogin()" style="background-color: transparent; border-color: transparent;">
+      <img
+        [src]="brandLogo"
+        style="width: 80%; align-self: center; padding-top: 5%"
+      />
+    </button>
+
+    <a
+      routerLink="./"
+      class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
+    >
+      <svg class="bi" width="100" height="80"></svg>
+    </a>
+    <ul class="nav nav-pills flex-column mb-auto">
+      <li class="nav-item">
+        <a
+          routerLink="./image-upload"
+          class="nav-link link-dark text-label"
+          [ngClass]="{ active: this.currentRoute == '/image-upload' }"
+        >
+          Upload Image
+        </a>
+      </li>
+      <!-- <li class="nav-item">
+        <a
+          routerLink="./patient-profile"
+          class="nav-link link-dark text-label"
+          [ngClass]="{ active: this.currentRoute == '/patient-profile' }"
+        >
+          Patient Information
+        </a>
+      </li>
+      <li>
+        <a
+          routerLink="./survey"
+          class="nav-link link-dark text-label"
+          [ngClass]="{
+            active: this.currentRoute == ('/survey')
+          }"
+        >
+          Primary Symptoms
+        </a>
+      </li>
+      <li>
+        <a
+          routerLink="./survey"
+          class="nav-link link-dark text-label"
+          [ngClass]="{
+            active: this.currentRoute == ('/survey?step=2')
+          }"
+        >
+          Secondary Symptoms
+        </a>
+      </li>
+      <li>
+        <a
+          class="text-label"
+          routerLink="./survey?step=3"
+          class="nav-link link-dark text-label"
+          [ngClass]="{ active: this.currentRoute == '/survey?step=3' }"
+        >
+          Signs
+        </a>
+      </li> -->
+      <li>
+        <a
+          class="nav-link link-dark text-label"
+          [ngClass]="{ active: this.currentRoute == '/result' }"
+        >
+          Diagnosis and Recommendation
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="container p-5 min-vh-100" role="main">
+    <router-outlet></router-outlet>
+    <div class="row">
+      <div class="col align-items-center">
+        <a
+          href="https://github.com/Xiaolan-ISS/IRS-PM-2022-05-01-PT-GRP6-AEyeDiagnosisSystem"
+          target="_blank">
+          <h5>About A-EYE</h5>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
