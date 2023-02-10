@@ -11,12 +11,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AppRoutingModule": () => (/* binding */ AppRoutingModule)
 /* harmony export */ });
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ 4202);
-/* harmony import */ var _image_upload_image_upload_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./image-upload/image-upload.component */ 2033);
-/* harmony import */ var _information_page_information_page_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./information-page/information-page.component */ 9439);
-/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./login/login.component */ 8458);
-/* harmony import */ var _result_result_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./result/result.component */ 6812);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/core */ 5000);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/router */ 4202);
+/* harmony import */ var _batch_upload_batch_upload_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./batch-upload/batch-upload.component */ 7776);
+/* harmony import */ var _image_upload_image_upload_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./image-upload/image-upload.component */ 2033);
+/* harmony import */ var _information_page_information_page_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./information-page/information-page.component */ 9439);
+/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./login/login.component */ 8458);
+/* harmony import */ var _result_result_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./result/result.component */ 6812);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/core */ 5000);
+
 
 
 
@@ -26,16 +28,19 @@ __webpack_require__.r(__webpack_exports__);
 
 const routes = [{
   path: '',
-  component: _login_login_component__WEBPACK_IMPORTED_MODULE_2__.LoginComponent
+  component: _login_login_component__WEBPACK_IMPORTED_MODULE_3__.LoginComponent
 }, {
   path: 'info',
-  component: _information_page_information_page_component__WEBPACK_IMPORTED_MODULE_1__.InformationPageComponent
+  component: _information_page_information_page_component__WEBPACK_IMPORTED_MODULE_2__.InformationPageComponent
 }, {
   path: 'result',
-  component: _result_result_component__WEBPACK_IMPORTED_MODULE_3__.ResultComponent
+  component: _result_result_component__WEBPACK_IMPORTED_MODULE_4__.ResultComponent
 }, {
   path: 'image-upload',
-  component: _image_upload_image_upload_component__WEBPACK_IMPORTED_MODULE_0__.ImageUploadComponent
+  component: _image_upload_image_upload_component__WEBPACK_IMPORTED_MODULE_1__.ImageUploadComponent
+}, {
+  path: 'batch-upload',
+  component: _batch_upload_batch_upload_component__WEBPACK_IMPORTED_MODULE_0__.BatchUploadComponent
 }];
 let AppRoutingModule = /*#__PURE__*/(() => {
   class AppRoutingModule {}
@@ -44,19 +49,19 @@ let AppRoutingModule = /*#__PURE__*/(() => {
     return new (t || AppRoutingModule)();
   };
 
-  AppRoutingModule.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineNgModule"]({
+  AppRoutingModule.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineNgModule"]({
     type: AppRoutingModule
   });
-  AppRoutingModule.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineInjector"]({
-    imports: [[_angular_router__WEBPACK_IMPORTED_MODULE_5__.RouterModule.forRoot(routes)], _angular_router__WEBPACK_IMPORTED_MODULE_5__.RouterModule]
+  AppRoutingModule.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineInjector"]({
+    imports: [[_angular_router__WEBPACK_IMPORTED_MODULE_6__.RouterModule.forRoot(routes)], _angular_router__WEBPACK_IMPORTED_MODULE_6__.RouterModule]
   });
   return AppRoutingModule;
 })();
 
 (function () {
-  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵsetNgModuleScope"](AppRoutingModule, {
-    imports: [_angular_router__WEBPACK_IMPORTED_MODULE_5__.RouterModule],
-    exports: [_angular_router__WEBPACK_IMPORTED_MODULE_5__.RouterModule]
+  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵsetNgModuleScope"](AppRoutingModule, {
+    imports: [_angular_router__WEBPACK_IMPORTED_MODULE_6__.RouterModule],
+    exports: [_angular_router__WEBPACK_IMPORTED_MODULE_6__.RouterModule]
   });
 })();
 
@@ -103,10 +108,13 @@ function AppComponent_div_1_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnamespaceHTML"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "ul", 11)(6, "li", 12)(7, "a", 13);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, " Upload Image ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, " Batch Analysis ");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "li")(10, "a", 14);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, " Diagnosis and Recommendation ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "li", 12)(10, "a", 14);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, " Upload Image ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "li")(13, "a", 15);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, " Diagnosis and Recommendation ");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()();
   }
 
@@ -115,9 +123,11 @@ function AppComponent_div_1_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("src", ctx_r0.brandLogo, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction1"](3, _c0, ctx_r0.currentRoute == "/image-upload"));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction1"](4, _c0, ctx_r0.currentRoute == "/batch-upload"));
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction1"](5, _c0, ctx_r0.currentRoute == "/result"));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction1"](6, _c0, ctx_r0.currentRoute == "/image-upload"));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction1"](8, _c0, ctx_r0.currentRoute == "/result"));
   }
 }
 
@@ -153,11 +163,11 @@ let AppComponent = /*#__PURE__*/(() => {
     selectors: [["app-root"]],
     decls: 9,
     vars: 1,
-    consts: [[1, "d-flex", "flex-row", "p-3", "min-vh-100"], ["class", "d-flex flex-column flex-shrink-0 sidebar", "style", "width: 280px", 4, "ngIf"], ["role", "main", 1, "container", "p-5", "min-vh-100"], [1, "row"], [1, "col", "align-items-center"], ["href", "https://github.com/Xiaolan-ISS/IRS-PM-2022-05-01-PT-GRP6-AEyeDiagnosisSystem", "target", "_blank"], [1, "d-flex", "flex-column", "flex-shrink-0", "sidebar", 2, "width", "280px"], [2, "background-color", "transparent", "border-color", "transparent", 3, "click"], [2, "width", "80%", "align-self", "center", "padding-top", "5%", 3, "src"], ["routerLink", "./", 1, "d-flex", "align-items-center", "mb-3", "mb-md-0", "me-md-auto", "link-dark", "text-decoration-none"], ["width", "100", "height", "80", 1, "bi"], [1, "nav", "nav-pills", "flex-column", "mb-auto"], [1, "nav-item"], ["routerLink", "./image-upload", 1, "nav-link", "link-dark", "text-label", 3, "ngClass"], [1, "nav-link", "link-dark", "text-label", 3, "ngClass"]],
+    consts: [[1, "d-flex", "flex-row", "p-3", "min-vh-100"], ["class", "d-flex flex-column flex-shrink-0 sidebar", "style", "width: 280px", 4, "ngIf"], ["role", "main", 1, "container", "p-5", "min-vh-100"], [1, "row"], [1, "col", "align-items-center"], ["href", "https://github.com/Xiaolan-ISS/IRS-PM-2022-05-01-PT-GRP6-AEyeDiagnosisSystem", "target", "_blank"], [1, "d-flex", "flex-column", "flex-shrink-0", "sidebar", 2, "width", "280px"], [2, "background-color", "transparent", "border-color", "transparent", 3, "click"], [2, "width", "80%", "align-self", "center", "padding-top", "5%", 3, "src"], ["routerLink", "./", 1, "d-flex", "align-items-center", "mb-3", "mb-md-0", "me-md-auto", "link-dark", "text-decoration-none"], ["width", "100", "height", "80", 1, "bi"], [1, "nav", "nav-pills", "flex-column", "mb-auto"], [1, "nav-item"], ["routerLink", "./batch-upload", 1, "nav-link", "link-dark", "text-label", 3, "ngClass"], ["routerLink", "./image-upload", 1, "nav-link", "link-dark", "text-label", 3, "ngClass"], [1, "nav-link", "link-dark", "text-label", 3, "ngClass"]],
     template: function AppComponent_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, AppComponent_div_1_Template, 12, 7, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, AppComponent_div_1_Template, 15, 10, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "router-outlet");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "div", 3)(5, "div", 4)(6, "a", 5)(7, "h5");
@@ -188,20 +198,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AppModule": () => (/* binding */ AppModule)
 /* harmony export */ });
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/platform-browser */ 2313);
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/platform-browser */ 2313);
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app-routing.module */ 158);
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app.component */ 5041);
 /* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./login/login.component */ 8458);
 /* harmony import */ var _result_result_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./result/result.component */ 6812);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/router */ 4202);
-/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ 3707);
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/forms */ 3075);
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/common/http */ 520);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/router */ 4202);
+/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ 3707);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/forms */ 3075);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/common/http */ 520);
 /* harmony import */ var _image_upload_image_upload_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./image-upload/image-upload.component */ 2033);
 /* harmony import */ var _dnd_directive__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./dnd.directive */ 6020);
 /* harmony import */ var _left_dnd_directive__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./left-dnd.directive */ 911);
 /* harmony import */ var _information_page_information_page_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./information-page/information-page.component */ 9439);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/core */ 5000);
+/* harmony import */ var _batch_upload_batch_upload_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./batch-upload/batch-upload.component */ 7776);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/core */ 5000);
+
 
 
 
@@ -223,22 +235,207 @@ let AppModule = /*#__PURE__*/(() => {
     return new (t || AppModule)();
   };
 
-  AppModule.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵdefineNgModule"]({
+  AppModule.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵdefineNgModule"]({
     type: AppModule,
     bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent]
   });
-  AppModule.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵdefineInjector"]({
+  AppModule.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵdefineInjector"]({
     providers: [],
-    imports: [[_angular_platform_browser__WEBPACK_IMPORTED_MODULE_9__.BrowserModule, _angular_router__WEBPACK_IMPORTED_MODULE_10__.RouterModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_11__.NgbModule, _angular_forms__WEBPACK_IMPORTED_MODULE_12__.ReactiveFormsModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_13__.HttpClientModule]]
+    imports: [[_angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__.BrowserModule, _angular_router__WEBPACK_IMPORTED_MODULE_11__.RouterModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_12__.NgbModule, _angular_forms__WEBPACK_IMPORTED_MODULE_13__.ReactiveFormsModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_14__.HttpClientModule]]
   });
   return AppModule;
 })();
 
 (function () {
-  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵsetNgModuleScope"](AppModule, {
-    declarations: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent, _login_login_component__WEBPACK_IMPORTED_MODULE_2__.LoginComponent, _result_result_component__WEBPACK_IMPORTED_MODULE_3__.ResultComponent, _image_upload_image_upload_component__WEBPACK_IMPORTED_MODULE_4__.ImageUploadComponent, _dnd_directive__WEBPACK_IMPORTED_MODULE_5__.RightDndDirective, _left_dnd_directive__WEBPACK_IMPORTED_MODULE_6__.LeftDndDirective, _information_page_information_page_component__WEBPACK_IMPORTED_MODULE_7__.InformationPageComponent],
-    imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_9__.BrowserModule, _angular_router__WEBPACK_IMPORTED_MODULE_10__.RouterModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_11__.NgbModule, _angular_forms__WEBPACK_IMPORTED_MODULE_12__.ReactiveFormsModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_13__.HttpClientModule]
+  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵsetNgModuleScope"](AppModule, {
+    declarations: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent, _login_login_component__WEBPACK_IMPORTED_MODULE_2__.LoginComponent, _result_result_component__WEBPACK_IMPORTED_MODULE_3__.ResultComponent, _image_upload_image_upload_component__WEBPACK_IMPORTED_MODULE_4__.ImageUploadComponent, _dnd_directive__WEBPACK_IMPORTED_MODULE_5__.RightDndDirective, _left_dnd_directive__WEBPACK_IMPORTED_MODULE_6__.LeftDndDirective, _information_page_information_page_component__WEBPACK_IMPORTED_MODULE_7__.InformationPageComponent, _batch_upload_batch_upload_component__WEBPACK_IMPORTED_MODULE_8__.BatchUploadComponent],
+    imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__.BrowserModule, _angular_router__WEBPACK_IMPORTED_MODULE_11__.RouterModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_12__.NgbModule, _angular_forms__WEBPACK_IMPORTED_MODULE_13__.ReactiveFormsModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_14__.HttpClientModule]
   });
+})();
+
+/***/ }),
+
+/***/ 7776:
+/*!********************************************************!*\
+  !*** ./src/app/batch-upload/batch-upload.component.ts ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "BatchUploadComponent": () => (/* binding */ BatchUploadComponent)
+/* harmony export */ });
+/* harmony import */ var _Users_changsiang_Desktop_dev_PRS_PM_IS04PT_ISY5002_GROUP6_SystemCode_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 5861);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ 3905);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 5000);
+/* harmony import */ var _shared_service_backend_backend_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../shared/service/backend/backend.service */ 6049);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ 9808);
+
+
+
+
+
+
+function BatchUploadComponent_tr_8_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "tr")(1, "td")(2, "a", 5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](4, "td");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()();
+  }
+
+  if (rf & 2) {
+    const x_r1 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵpropertyInterpolate"]("href", x_r1.img, _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵsanitizeUrl"]);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate"](x_r1.name);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate"](x_r1.features);
+  }
+}
+
+let BatchUploadComponent = /*#__PURE__*/(() => {
+  class BatchUploadComponent {
+    constructor(backendService) {
+      this.backendService = backendService;
+      this.files = [];
+      this.total = 0;
+      this.done = 0;
+      this.progress = '0%';
+    }
+
+    ngOnInit() {}
+
+    resetCounter() {
+      this.files = [];
+      this.total = 0;
+      this.done = 0;
+      this.progress = '0%';
+    }
+
+    readFolder(e) {
+      var _this = this;
+
+      return (0,_Users_changsiang_Desktop_dev_PRS_PM_IS04PT_ISY5002_GROUP6_SystemCode_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+        _this.resetCounter();
+
+        var theFiles = e.target.files;
+        var relativePath = theFiles[0].webkitRelativePath;
+        var folder = relativePath.split("/");
+        _this.total = theFiles.length;
+
+        for (let file of theFiles) {
+          const b64 = yield _this.readFiles(file);
+          const pred = yield (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.firstValueFrom)(_this.backendService.getPredictions(String(b64)));
+          const features = [];
+
+          try {
+            for (let p of pred) {
+              features.push(p.label);
+            }
+
+            if (features.includes("drusen")) {
+              const res = {
+                name: file.name,
+                img: b64,
+                features: "drusen",
+                payload: JSON.stringify(pred)
+              };
+
+              _this.files.push(res);
+            } else if (features.includes("dot hemorrhage")) {
+              const res = {
+                name: file.name,
+                img: b64,
+                features: "dot hemorrhage",
+                payload: JSON.stringify(pred)
+              };
+
+              _this.files.push(res);
+            }
+          } catch (error) {
+            const res = {
+              name: file.name,
+              img: b64,
+              features: pred.msg,
+              payload: JSON.stringify(pred)
+            };
+
+            _this.files.push(res);
+          } finally {
+            _this.done++;
+            _this.progress = `${Math.round(_this.done / _this.total * 100)}%`;
+            continue;
+          }
+        }
+      })();
+    }
+
+    readFiles(file) {
+      return (0,_Users_changsiang_Desktop_dev_PRS_PM_IS04PT_ISY5002_GROUP6_SystemCode_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+        const reader = new FileReader();
+        const promise = new Promise((resolve, reject) => {
+          reader.onload = evt => {
+            resolve(evt.target.result);
+          };
+        });
+        reader.readAsDataURL(file);
+        return promise;
+      })();
+    }
+
+  }
+
+  BatchUploadComponent.ɵfac = function BatchUploadComponent_Factory(t) {
+    return new (t || BatchUploadComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_shared_service_backend_backend_service__WEBPACK_IMPORTED_MODULE_1__.BackendService));
+  };
+
+  BatchUploadComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({
+    type: BatchUploadComponent,
+    selectors: [["app-batch-upload"]],
+    decls: 11,
+    vars: 7,
+    consts: [["type", "file", "id", "rtfileDropRef", "data-height", "500", "webkitdirectory", "", "mozdirectory", "", "msdirectory", "", "odirectory", "", "directory", "", "multiple", "", 1, "file-upload", 3, "change"], [1, "progress"], ["role", "progressbar", "aria-valuemin", "0", "aria-valuemax", "100", 1, "progress-bar"], [1, "sr-only"], [4, "ngFor", "ngForOf"], ["target", "_blank", 3, "href"]],
+    template: function BatchUploadComponent_Template(rf, ctx) {
+      if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](1, "batch-upload works!");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](2, "input", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("change", function BatchUploadComponent_Template_input_change_2_listener($event) {
+          return ctx.readFolder($event);
+        });
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](3, "div", 1)(4, "div", 2)(5, "span", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](7, "table");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](8, BatchUploadComponent_tr_8_Template, 6, 3, "tr", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](9, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+      }
+
+      if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵstyleProp"]("width", ctx.progress);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵattribute"]("aria-valuenow", ctx.done / ctx.total * 100);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate1"]("", ctx.progress, " Complete");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngForOf", ctx.files);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate2"]("Proccesing: ", ctx.done, " of ", ctx.total, "");
+      }
+    },
+    directives: [_angular_common__WEBPACK_IMPORTED_MODULE_4__.NgForOf],
+    styles: [""]
+  });
+  return BatchUploadComponent;
 })();
 
 /***/ }),
@@ -336,7 +533,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "ImageUploadComponent": () => (/* binding */ ImageUploadComponent)
 /* harmony export */ });
-/* harmony import */ var _Users_changsiang_Desktop_dev_AEye2WebApp_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 5861);
+/* harmony import */ var _Users_changsiang_Desktop_dev_PRS_PM_IS04PT_ISY5002_GROUP6_SystemCode_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 5861);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs */ 3905);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/core */ 5000);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/router */ 4202);
@@ -463,7 +660,7 @@ let ImageUploadComponent = /*#__PURE__*/(() => {
     analysis() {
       var _this = this;
 
-      return (0,_Users_changsiang_Desktop_dev_AEye2WebApp_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      return (0,_Users_changsiang_Desktop_dev_PRS_PM_IS04PT_ISY5002_GROUP6_SystemCode_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
         if (_this.rtPreviewImage !== '' && _this.ltPreviewImage !== '') {
           _this.analysing = true;
           const rtAnnotate = yield (0,rxjs__WEBPACK_IMPORTED_MODULE_5__.firstValueFrom)(_this.backendService.getAnnotations(_this.rtPreviewImage));
@@ -789,10 +986,8 @@ let LoginComponent = /*#__PURE__*/(() => {
     ngOnInit() {}
 
     onClickLoginBtn() {
-      var _a, _b;
-
-      if (((_a = this.username) === null || _a === void 0 ? void 0 : _a.value) === 'demo' && ((_b = this.password) === null || _b === void 0 ? void 0 : _b.value) === 'demo') {
-        this.router.navigate(['/info'], {
+      if (true) {
+        this.router.navigate(['/batch-upload'], {
           relativeTo: this.route
         });
       }
@@ -73307,8 +73502,8 @@ let NgbAlert = /*#__PURE__*/(() => {
         /**
          * @suppress {msgDescriptions}
          */
-        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_2 = goog.getMsg("Close");
-        i18n_1 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_2;
+        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_2 = goog.getMsg("Close");
+        i18n_1 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_2;
       } else {
         i18n_1 = $localize`:@@ngb.alert.close:Close`;
       }
@@ -74375,11 +74570,11 @@ let NgbCarousel = /*#__PURE__*/(() => {
         /**
          * @desc Currently selected slide number read by screen reader
          */
-        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__5 = goog.getMsg(" Slide {$interpolation} of {$interpolation_1} ", {
+        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__5 = goog.getMsg(" Slide {$interpolation} of {$interpolation_1} ", {
           "interpolation": "\uFFFD0\uFFFD",
           "interpolation_1": "\uFFFD1\uFFFD"
         });
-        i18n_4 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__5;
+        i18n_4 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__5;
       } else {
         i18n_4 = $localize`:Currently selected slide number read by screen reader@@ngb.carousel.slide-number: Slide ${"\uFFFD0\uFFFD"}:INTERPOLATION: of ${"\uFFFD1\uFFFD"}:INTERPOLATION_1: `;
       }
@@ -74390,8 +74585,8 @@ let NgbCarousel = /*#__PURE__*/(() => {
         /**
          * @suppress {msgDescriptions}
          */
-        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__7 = goog.getMsg("Previous");
-        i18n_6 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__7;
+        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__7 = goog.getMsg("Previous");
+        i18n_6 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__7;
       } else {
         i18n_6 = $localize`:@@ngb.carousel.previous:Previous`;
       }
@@ -74402,8 +74597,8 @@ let NgbCarousel = /*#__PURE__*/(() => {
         /**
          * @suppress {msgDescriptions}
          */
-        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__9 = goog.getMsg("Next");
-        i18n_8 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__9;
+        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__9 = goog.getMsg("Next");
+        i18n_8 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__9;
       } else {
         i18n_8 = $localize`:@@ngb.carousel.next:Next`;
       }
@@ -75910,8 +76105,8 @@ let NgbDatepickerNavigationSelect = /*#__PURE__*/(() => {
         /**
          * @suppress {msgDescriptions}
          */
-        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_14 = goog.getMsg("Select month");
-        i18n_13 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_14;
+        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_14 = goog.getMsg("Select month");
+        i18n_13 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_14;
       } else {
         i18n_13 = $localize`:@@ngb.datepicker.select-month:Select month`;
       }
@@ -75922,8 +76117,8 @@ let NgbDatepickerNavigationSelect = /*#__PURE__*/(() => {
         /**
          * @suppress {msgDescriptions}
          */
-        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_16 = goog.getMsg("Select month");
-        i18n_15 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_16;
+        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_16 = goog.getMsg("Select month");
+        i18n_15 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_16;
       } else {
         i18n_15 = $localize`:@@ngb.datepicker.select-month:Select month`;
       }
@@ -75934,8 +76129,8 @@ let NgbDatepickerNavigationSelect = /*#__PURE__*/(() => {
         /**
          * @suppress {msgDescriptions}
          */
-        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_18 = goog.getMsg("Select year");
-        i18n_17 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_18;
+        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_18 = goog.getMsg("Select year");
+        i18n_17 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_18;
       } else {
         i18n_17 = $localize`:@@ngb.datepicker.select-year:Select year`;
       }
@@ -75946,8 +76141,8 @@ let NgbDatepickerNavigationSelect = /*#__PURE__*/(() => {
         /**
          * @suppress {msgDescriptions}
          */
-        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_20 = goog.getMsg("Select year");
-        i18n_19 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_20;
+        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_20 = goog.getMsg("Select year");
+        i18n_19 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_20;
       } else {
         i18n_19 = $localize`:@@ngb.datepicker.select-year:Select year`;
       }
@@ -76043,8 +76238,8 @@ let NgbDatepickerNavigation = /*#__PURE__*/(() => {
         /**
          * @suppress {msgDescriptions}
          */
-        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_22 = goog.getMsg("Previous month");
-        i18n_21 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_22;
+        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_22 = goog.getMsg("Previous month");
+        i18n_21 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_22;
       } else {
         i18n_21 = $localize`:@@ngb.datepicker.previous-month:Previous month`;
       }
@@ -76055,8 +76250,8 @@ let NgbDatepickerNavigation = /*#__PURE__*/(() => {
         /**
          * @suppress {msgDescriptions}
          */
-        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_24 = goog.getMsg("Previous month");
-        i18n_23 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_24;
+        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_24 = goog.getMsg("Previous month");
+        i18n_23 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_24;
       } else {
         i18n_23 = $localize`:@@ngb.datepicker.previous-month:Previous month`;
       }
@@ -76067,8 +76262,8 @@ let NgbDatepickerNavigation = /*#__PURE__*/(() => {
         /**
          * @suppress {msgDescriptions}
          */
-        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_26 = goog.getMsg("Next month");
-        i18n_25 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_26;
+        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_26 = goog.getMsg("Next month");
+        i18n_25 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_26;
       } else {
         i18n_25 = $localize`:@@ngb.datepicker.next-month:Next month`;
       }
@@ -76079,8 +76274,8 @@ let NgbDatepickerNavigation = /*#__PURE__*/(() => {
         /**
          * @suppress {msgDescriptions}
          */
-        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_28 = goog.getMsg("Next month");
-        i18n_27 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_28;
+        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_28 = goog.getMsg("Next month");
+        i18n_27 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_28;
       } else {
         i18n_27 = $localize`:@@ngb.datepicker.next-month:Next month`;
       }
@@ -82230,8 +82425,8 @@ let NgbPagination = /*#__PURE__*/(() => {
         /**
          * @suppress {msgDescriptions}
          */
-        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__35 = goog.getMsg("\xAB\xAB");
-        i18n_34 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__35;
+        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__35 = goog.getMsg("\xAB\xAB");
+        i18n_34 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__35;
       } else {
         i18n_34 = $localize`:@@ngb.pagination.first:««`;
       }
@@ -82242,8 +82437,8 @@ let NgbPagination = /*#__PURE__*/(() => {
         /**
          * @suppress {msgDescriptions}
          */
-        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__37 = goog.getMsg("\xAB");
-        i18n_36 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__37;
+        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__37 = goog.getMsg("\xAB");
+        i18n_36 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__37;
       } else {
         i18n_36 = $localize`:@@ngb.pagination.previous:«`;
       }
@@ -82254,8 +82449,8 @@ let NgbPagination = /*#__PURE__*/(() => {
         /**
          * @suppress {msgDescriptions}
          */
-        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__39 = goog.getMsg("\xBB");
-        i18n_38 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__39;
+        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__39 = goog.getMsg("\xBB");
+        i18n_38 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__39;
       } else {
         i18n_38 = $localize`:@@ngb.pagination.next:»`;
       }
@@ -82266,8 +82461,8 @@ let NgbPagination = /*#__PURE__*/(() => {
         /**
          * @suppress {msgDescriptions}
          */
-        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__41 = goog.getMsg("\xBB\xBB");
-        i18n_40 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__41;
+        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__41 = goog.getMsg("\xBB\xBB");
+        i18n_40 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__41;
       } else {
         i18n_40 = $localize`:@@ngb.pagination.last:»»`;
       }
@@ -82278,8 +82473,8 @@ let NgbPagination = /*#__PURE__*/(() => {
         /**
          * @suppress {msgDescriptions}
          */
-        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__45 = goog.getMsg("First");
-        i18n_44 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__45;
+        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__45 = goog.getMsg("First");
+        i18n_44 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__45;
       } else {
         i18n_44 = $localize`:@@ngb.pagination.first-aria:First`;
       }
@@ -82290,8 +82485,8 @@ let NgbPagination = /*#__PURE__*/(() => {
         /**
          * @suppress {msgDescriptions}
          */
-        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__48 = goog.getMsg("Previous");
-        i18n_47 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__48;
+        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__48 = goog.getMsg("Previous");
+        i18n_47 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__48;
       } else {
         i18n_47 = $localize`:@@ngb.pagination.previous-aria:Previous`;
       }
@@ -82302,8 +82497,8 @@ let NgbPagination = /*#__PURE__*/(() => {
         /**
          * @suppress {msgDescriptions}
          */
-        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__51 = goog.getMsg("Next");
-        i18n_50 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__51;
+        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__51 = goog.getMsg("Next");
+        i18n_50 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__51;
       } else {
         i18n_50 = $localize`:@@ngb.pagination.next-aria:Next`;
       }
@@ -82314,8 +82509,8 @@ let NgbPagination = /*#__PURE__*/(() => {
         /**
          * @suppress {msgDescriptions}
          */
-        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__53 = goog.getMsg("Last");
-        i18n_52 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__53;
+        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__53 = goog.getMsg("Last");
+        i18n_52 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__53;
       } else {
         i18n_52 = $localize`:@@ngb.pagination.last-aria:Last`;
       }
@@ -82965,10 +83160,10 @@ let NgbProgressbar = /*#__PURE__*/(() => {
         /**
          * @suppress {msgDescriptions}
          */
-        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__56 = goog.getMsg("{$interpolation}", {
+        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__56 = goog.getMsg("{$interpolation}", {
           "interpolation": "\uFFFD0\uFFFD"
         });
-        i18n_55 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__56;
+        i18n_55 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__56;
       } else {
         i18n_55 = $localize`:@@ngb.progressbar.value:${"\uFFFD0\uFFFD"}:INTERPOLATION:`;
       }
@@ -83799,8 +83994,8 @@ let NgbTimepicker = /*#__PURE__*/(() => {
         /**
          * @suppress {msgDescriptions}
          */
-        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_58 = goog.getMsg("HH");
-        i18n_57 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_58;
+        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_58 = goog.getMsg("HH");
+        i18n_57 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_58;
       } else {
         i18n_57 = $localize`:@@ngb.timepicker.HH:HH`;
       }
@@ -83811,8 +84006,8 @@ let NgbTimepicker = /*#__PURE__*/(() => {
         /**
          * @suppress {msgDescriptions}
          */
-        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_60 = goog.getMsg("Hours");
-        i18n_59 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_60;
+        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_60 = goog.getMsg("Hours");
+        i18n_59 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_60;
       } else {
         i18n_59 = $localize`:@@ngb.timepicker.hours:Hours`;
       }
@@ -83823,8 +84018,8 @@ let NgbTimepicker = /*#__PURE__*/(() => {
         /**
          * @suppress {msgDescriptions}
          */
-        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_62 = goog.getMsg("MM");
-        i18n_61 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_62;
+        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_62 = goog.getMsg("MM");
+        i18n_61 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_62;
       } else {
         i18n_61 = $localize`:@@ngb.timepicker.MM:MM`;
       }
@@ -83835,8 +84030,8 @@ let NgbTimepicker = /*#__PURE__*/(() => {
         /**
          * @suppress {msgDescriptions}
          */
-        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_64 = goog.getMsg("Minutes");
-        i18n_63 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_64;
+        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_64 = goog.getMsg("Minutes");
+        i18n_63 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS_64;
       } else {
         i18n_63 = $localize`:@@ngb.timepicker.minutes:Minutes`;
       }
@@ -83847,8 +84042,8 @@ let NgbTimepicker = /*#__PURE__*/(() => {
         /**
          * @suppress {msgDescriptions}
          */
-        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__66 = goog.getMsg("Increment hours");
-        i18n_65 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__66;
+        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__66 = goog.getMsg("Increment hours");
+        i18n_65 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__66;
       } else {
         i18n_65 = $localize`:@@ngb.timepicker.increment-hours:Increment hours`;
       }
@@ -83859,8 +84054,8 @@ let NgbTimepicker = /*#__PURE__*/(() => {
         /**
          * @suppress {msgDescriptions}
          */
-        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__68 = goog.getMsg("Decrement hours");
-        i18n_67 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__68;
+        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__68 = goog.getMsg("Decrement hours");
+        i18n_67 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__68;
       } else {
         i18n_67 = $localize`:@@ngb.timepicker.decrement-hours:Decrement hours`;
       }
@@ -83871,8 +84066,8 @@ let NgbTimepicker = /*#__PURE__*/(() => {
         /**
          * @suppress {msgDescriptions}
          */
-        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__70 = goog.getMsg("Increment minutes");
-        i18n_69 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__70;
+        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__70 = goog.getMsg("Increment minutes");
+        i18n_69 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__70;
       } else {
         i18n_69 = $localize`:@@ngb.timepicker.increment-minutes:Increment minutes`;
       }
@@ -83883,8 +84078,8 @@ let NgbTimepicker = /*#__PURE__*/(() => {
         /**
          * @suppress {msgDescriptions}
          */
-        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__72 = goog.getMsg("Decrement minutes");
-        i18n_71 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__72;
+        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__72 = goog.getMsg("Decrement minutes");
+        i18n_71 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__72;
       } else {
         i18n_71 = $localize`:@@ngb.timepicker.decrement-minutes:Decrement minutes`;
       }
@@ -83895,8 +84090,8 @@ let NgbTimepicker = /*#__PURE__*/(() => {
         /**
          * @suppress {msgDescriptions}
          */
-        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__74 = goog.getMsg("SS");
-        i18n_73 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__74;
+        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__74 = goog.getMsg("SS");
+        i18n_73 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__74;
       } else {
         i18n_73 = $localize`:@@ngb.timepicker.SS:SS`;
       }
@@ -83907,8 +84102,8 @@ let NgbTimepicker = /*#__PURE__*/(() => {
         /**
          * @suppress {msgDescriptions}
          */
-        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__76 = goog.getMsg("Seconds");
-        i18n_75 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__76;
+        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__76 = goog.getMsg("Seconds");
+        i18n_75 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__76;
       } else {
         i18n_75 = $localize`:@@ngb.timepicker.seconds:Seconds`;
       }
@@ -83919,8 +84114,8 @@ let NgbTimepicker = /*#__PURE__*/(() => {
         /**
          * @suppress {msgDescriptions}
          */
-        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS___78 = goog.getMsg("Increment seconds");
-        i18n_77 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS___78;
+        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS___78 = goog.getMsg("Increment seconds");
+        i18n_77 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS___78;
       } else {
         i18n_77 = $localize`:@@ngb.timepicker.increment-seconds:Increment seconds`;
       }
@@ -83931,8 +84126,8 @@ let NgbTimepicker = /*#__PURE__*/(() => {
         /**
          * @suppress {msgDescriptions}
          */
-        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS___80 = goog.getMsg("Decrement seconds");
-        i18n_79 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS___80;
+        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS___80 = goog.getMsg("Decrement seconds");
+        i18n_79 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS___80;
       } else {
         i18n_79 = $localize`:@@ngb.timepicker.decrement-seconds:Decrement seconds`;
       }
@@ -83943,10 +84138,10 @@ let NgbTimepicker = /*#__PURE__*/(() => {
         /**
          * @suppress {msgDescriptions}
          */
-        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS___82 = goog.getMsg("{$interpolation}", {
+        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS___82 = goog.getMsg("{$interpolation}", {
           "interpolation": "\uFFFD0\uFFFD"
         });
-        i18n_81 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS___82;
+        i18n_81 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS___82;
       } else {
         i18n_81 = $localize`:@@ngb.timepicker.PM:${"\uFFFD0\uFFFD"}:INTERPOLATION:`;
       }
@@ -83957,10 +84152,10 @@ let NgbTimepicker = /*#__PURE__*/(() => {
         /**
          * @suppress {msgDescriptions}
          */
-        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS___84 = goog.getMsg("{$interpolation}", {
+        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS___84 = goog.getMsg("{$interpolation}", {
           "interpolation": "\uFFFD0\uFFFD"
         });
-        i18n_83 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS___84;
+        i18n_83 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS___84;
       } else {
         i18n_83 = $localize`:@@ngb.timepicker.AM:${"\uFFFD0\uFFFD"}:INTERPOLATION:`;
       }
@@ -84346,8 +84541,8 @@ let NgbToast = /*#__PURE__*/(() => {
         /**
          * @suppress {msgDescriptions}
          */
-        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__86 = goog.getMsg("Close");
-        i18n_85 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_AEYE2WEBAPP_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__86;
+        const MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__86 = goog.getMsg("Close");
+        i18n_85 = MSG__USERS_CHANGSIANG_DESKTOP_DEV_PRS_PM_IS04PT_ISY5002_GROUP6_SYSTEMCODE_FRONTEND_NODE_MODULES__NG_BOOTSTRAP_NG_BOOTSTRAP_FESM2015_NG_BOOTSTRAP_MJS__86;
       } else {
         i18n_85 = $localize`:@@ngb.toast.close-aria:Close`;
       }
