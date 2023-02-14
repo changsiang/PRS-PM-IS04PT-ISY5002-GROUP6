@@ -999,6 +999,14 @@ def increment_path(path, exist_ok=False, sep='', mkdir=False):
 
     return path
 
+def resize_img(img):
+    height, width, channel = img.shape
+    if(height == width):
+        return img
+    x1 = int((width / 2) - (height / 2))
+    x2 = int((width /2 ) + (height / 2))
+    cropped = img[0:height, x1:x2]
+    return np.ascontiguousarray(cropped)
 
 # OpenCV Chinese-friendly functions ------------------------------------------------------------------------------------
 imshow_ = cv2.imshow  # copy to avoid recursion errors

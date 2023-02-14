@@ -1,6 +1,6 @@
 from yolov5.models.common import DetectMultiBackend
 from yolov5.utils.augmentations import letterbox
-from yolov5.utils.general import check_img_size, non_max_suppression, scale_coords
+from yolov5.utils.general import check_img_size, non_max_suppression, resize_img, scale_coords
 import cv2
 import numpy as np
 import torch
@@ -11,7 +11,6 @@ import base64
 from flask import Flask, render_template, request, send_file
 from PIL import Image
 import io
-import os
 import argparse
 from flask_cors import CORS, cross_origin
 
@@ -163,6 +162,7 @@ def detect(
     imgsz = check_img_size(imgsz, s=stride)
     model.warmup(imgsz=(1 , 3, imgsz, imgsz))
     img = cv2.imread(img)
+    img = resize_img(img)
     im = letterbox(img, imgsz, stride=stride, auto=pt)[0]
     im = im.transpose((2, 0, 1))[::-1]
     im = np.ascontiguousarray(im)
