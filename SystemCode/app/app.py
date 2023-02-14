@@ -136,6 +136,8 @@ def predict_b64():
     payload = request.get_json()
     # Initialise your data
     p = payload["payload"]
+    if (p.find('data:image/jpeg') == -1):
+        return ({"msg": f"invalid file type"})
     if (p is not None):
         p_clean = p[p.find('/9'):]
         temp_path = './predict_temp_{timestamp}.jpg'
